@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realtime Notifications</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    #notifications {
+      border: 1px solid #ccc;
+      height: 300px;
+      overflow-y: auto;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .notification {
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+    }
+    .notification.info {
+      background-color: #e3f2fd;
+    }
+    .notification.user {
+      background-color: #e8f5e9;
+    }
+    .notification.notification {
+      background-color: #fff9c4;
+    }
+    input, button {
+      padding: 8px;
+      margin-right: 5px;
+    }
+    button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Realtime Notifications</h1>
+  <div id="connection-status">Connecting...</div>
+  <div id="notifications"></div>
+  
+  <div>
+    <input type="text" id="message-input" placeholder="Type a message">
+    <button id="send-btn">Send</button>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "name": "notification-server",
+    "version": "1.0.0",
+    "description": "WebSocket notification server with Redis",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "notification-server": "file:",
+        "redis": "^3.1.2",
+        "ws": "^8.5.0"
+    }
+}
